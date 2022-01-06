@@ -58,24 +58,26 @@ IMPORTANT: Der Feld ist immer begrentz, die Teile die den Rand überschreiten we
 
 ->Laufendes Programm Beispiel 1
 
-image::laufendesProgramm.png[Laufendes Programm Beispiel 1]
+image::src/main/resources/laufendesProgramm.png[Laufendes Programm Beispiel 1]
 
 ->Laufendes Programm Beispiel 2
 
-image::laufendesProgramm2.png[Laufendes Programm Beispiel 2]
+image::src/main/resources/laufendesProgramm2.png[Laufendes Programm Beispiel 2]
 
 ->Laufendes Programm Beispiel 3
 
-image::laufendesProgramm3.png[Laufendes Programm Beispiel 3]
+image::src/main/resources/laufendesProgramm3.png[Laufendes Programm Beispiel 3]
 
 ->Laufendes Programm Beispiel 4
 
-image::laufendesProgramm4.png[Laufendes Programm Beispiel 4]
+image::src/main/resources/laufendesProgramm4.png[Laufendes Programm Beispiel 4]
 
 ->Änderung in der Pause 4 (Auf Französish: le Canon a planneur)
 
-image::andärungInDerPause.png[Laufendes Programm Beispiel 4]
+image::src/main/resources/andärungInDerPause.png[Laufendes Programm Beispiel 5]
 
 ->Laufendes Programm Beispiel 5 (Auf Französish: le Canon a planneur)
 
-image::laufendesProgramm5.png[Laufendes Programm Beispiel 4]
+image::src/main/resources/laufendesProgramm5.png[Laufendes Programm Beispiel 6]
+
+Natürlich Können Sie andere Start Configurationen ausprobieren und die Evolution der Anderen Configurationen beobachten.

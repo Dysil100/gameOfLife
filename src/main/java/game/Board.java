@@ -9,7 +9,7 @@ import static librairies.StdDraw.*;
 
 public class Board {
 
-    private int configurations;
+    private int Generationen;
     private final ManageCells manageCells;
     static final int WIDTH_SCREEN = 1100;
     static final int HEIGHT_SCREEN = 600;
@@ -27,7 +27,7 @@ public class Board {
 
     private void start() {
         running = false;
-        configurations = 0;
+        Generationen = 0;
         manageCells.killAll();
         setCells();
     }
@@ -37,7 +37,7 @@ public class Board {
         text(WIDTH_SCREEN / 2, HEIGHT_SCREEN - (2 * UNIT_SIZE), "CHoose a configuration");
         text(WIDTH_SCREEN / 2, HEIGHT_SCREEN - (3.5 * UNIT_SIZE), "(by click on the cells that should be enable)");
         text(WIDTH_SCREEN / 2, HEIGHT_SCREEN - (5 * UNIT_SIZE), "And press Enter to simulate");
-        text(UNIT_SIZE * 2, HEIGHT_SCREEN - (2 * UNIT_SIZE), "Configurations; nr: " + configurations);
+        text(UNIT_SIZE * 2, HEIGHT_SCREEN - (2 * UNIT_SIZE), "Generationen; nr: " + Generationen);
 
     }
 
@@ -46,7 +46,7 @@ public class Board {
         text(WIDTH_SCREEN / 2, HEIGHT_SCREEN - (2 * UNIT_SIZE), "Press Space to pause the Simulation");
         text(WIDTH_SCREEN / 2, HEIGHT_SCREEN - (3.5 * UNIT_SIZE), "And adjust the actual Configuration if necessary");
         text(WIDTH_SCREEN / 2, HEIGHT_SCREEN - (5 * UNIT_SIZE), "And press Enter to continue the Simulation");
-        text(UNIT_SIZE * 2, HEIGHT_SCREEN - (2 * UNIT_SIZE), "Configurations; nr: " + configurations);
+        text(UNIT_SIZE * 2, HEIGHT_SCREEN - (2 * UNIT_SIZE), "Generationen; nr: " + Generationen);
 
     }
 
@@ -99,7 +99,7 @@ public class Board {
             manageCells.checkRules();
             manageCells.drawCells();
             runText();
-            configurations++;
+            Generationen++;
             StdDraw.show(delay);
             checkstate();
             checkPause();
