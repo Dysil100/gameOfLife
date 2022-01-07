@@ -83,7 +83,7 @@ public class Board {
 
     private void checkPause() {
         if (isKeyPressed(KeyEvent.VK_SPACE) && running) setCells();
-        if (isKeyPressed(KeyEvent.VK_SPACE) && !running) run();
+        if (isKeyPressed(KeyEvent.VK_ENTER) && !running) run();
     }
 
     private void checkEvents() {

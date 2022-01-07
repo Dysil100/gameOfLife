@@ -42,7 +42,7 @@ NOTE: Beim Starten des programm kann man (bzw. soll man) erstmal ein konfigurati
 
 Beim laufen kann das Programm durch zwei Tasten gesteuert
 
-    * Die Taste `Space`(Leertaste) mit dessen Hilfe mann Das Spiel (bzw. Die Simulation) pausieren oder fortsetzen je nachdem im welchen Zustand das die Simulation sich befindet kann.
+    * Die Taste `Space` und `Entter` mit dessen Hilfe mann Das Spiel (bzw. Die Simulation) pausieren(`space`) oder fortsetzen(`Enter`) je nachdem im welchen Zustand das die Simulation sich befindet kann.
 
     * Die Taste `ESC` mit dessen Hilfe mann Das Spiel neu starten (bzw. reinitialisieren) kann.
 
