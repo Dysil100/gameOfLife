@@ -40,13 +40,13 @@ NOTE: Beim Starten des programm kann man (bzw. soll man) erstmal ein konfigurati
 
 ==== #Bedienung#
 
-Beim laufen kann das Programm durch zwei Tasten gesteuert
+Beim laufen kann das Programm durch drei Tasten gesteuert
 
     * Die Taste `Space` und `Entter` mit dessen Hilfe mann Das Spiel (bzw. Die Simulation) pausieren(`space`) oder fortsetzen(`Enter`) je nachdem im welchen Zustand das die Simulation sich befindet kann.
 
     * Die Taste `ESC` mit dessen Hilfe mann Das Spiel neu starten (bzw. reinitialisieren) kann.
 
-TIP: Wenn Das Spiel paussiert ist kann man weiterhin ein Konfiguration einsetzen, oder die bestehende Konfiguration nach Vorlieben verändern und es wird beim fortsetzen der Simulation übernommen und weiter nach den Regel entwikelt
+TIP: Wenn Das Spiel paussiert ist kann man weiterhin ein Konfiguration einsetzen, oder die bestehende Generation nach Vorlieben verändern und es wird beim fortsetzen der Simulation übernommen und weiter nach den Regel entwikelt
 
 TIP: Halte deine hand über die Mausse(Links-Klick) und bewege Sie je machdem welche ligne (bzw. Configuration) gemalt werden sollte; es werden schon ein paar Zeillen gleichzeitig ein- oder ausgeschaltet, anstatt jeder einzelnes Feld anzuklicken
 
