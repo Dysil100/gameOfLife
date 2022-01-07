@@ -1698,7 +1698,7 @@ public class StdDraw implements ActionListener, MouseListener, MouseMotionListen
      * @param t number of milliseconds
      * @deprecated replaced by {@link #enableDoubleBuffering()}, {@link #show()}, and {@link #pause(int t)}
      */
-    @Deprecated
+    //@Deprecated
     public static void show(int t) {
         validateNonnegative(t, "t");
         show();

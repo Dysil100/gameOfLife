@@ -2,7 +2,7 @@ package game;
 
 import java.awt.*;
 
-import static game.Board.UNIT_SIZE;
+import static game.Board.halfSize;
 import static librairies.StdDraw.*;
 
 public class Cell {
@@ -21,22 +21,22 @@ public class Cell {
     }
 
 
-    public void draw() {
+    public void erscheinne() {
         if (isAlive) {
-            setPenColor(Color.BLACK);
-            filledCircle(x, y, UNIT_SIZE / 2);
+            drawDefault();
         } else {
-            setPenColor(Color.WHITE);
-            filledSquare(x, y, UNIT_SIZE / 2);
+            verschwinde();
         }
     }
 
-    public int getX() {
-        return x;
+    void verschwinde() {
+        setPenColor(Color.WHITE);
+        filledSquare(x, y, halfSize);
     }
 
-    public int getY() {
-        return y;
+    private void drawDefault() {
+        setPenColor(Color.BLACK);
+        filledCircle(x, y, halfSize);
     }
 
     public boolean isAlive() {
@@ -56,7 +56,4 @@ public class Cell {
                '}';
     }
 
-    public Position getPosition(){
-        return new Position(x, y);
-    }
 }

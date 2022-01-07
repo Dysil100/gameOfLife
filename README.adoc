@@ -36,23 +36,21 @@ Das Spiel des Lebens (englisch Conway’s Game of Life) ist ein vom Mathematiker
 
 ==== #Hinweise#
 
-NOTE: Es ist leider noch keine so sehr effiziente Lösung , dass die (bis zu dritten ungefähr) Ersten Konfigurationen zu malen bis zu einer Minute (abhängig vom Rechner dauern kann) dauern kann, danch ist es aber schön flüssig.
+NOTE: Beim Starten des programm kann man (bzw. soll man) erstmal ein konfiguration zeichen bevor man `Enter` drück, sonst passiert nicht, weil alle Zelle per default inaktiv sind.
 
 ==== #Bedienung#
 
 Beim laufen kann das Programm durch zwei Tasten gesteuert
 
-    * Die Taste `Space`(Leertaste) mit dessen Hilfe mann Das Spiel (bzw. Die Simulation) pausieren kann.
+    * Die Taste `Space`(Leertaste) mit dessen Hilfe mann Das Spiel (bzw. Die Simulation) pausieren oder fortsetzen je nachdem im welchen Zustand das die Simulation sich befindet kann.
 
-    * Die Taste `Enter` mit dessen Hilfe mann Das Spiel starten (bzw. fortsetzen kann)
+    * Die Taste `ESC` mit dessen Hilfe mann Das Spiel neu starten (bzw. reinitialisieren) kann.
 
 TIP: Wenn Das Spiel paussiert ist kann man weiterhin ein Konfiguration einsetzen, oder die bestehende Konfiguration nach Vorlieben verändern und es wird beim fortsetzen der Simulation übernommen und weiter nach den Regel entwikelt
 
 TIP: Halte deine hand über die Mausse(Links-Klick) und bewege Sie je machdem welche ligne (bzw. Configuration) gemalt werden sollte; es werden schon ein paar Zeillen gleichzeitig ein- oder ausgeschaltet, anstatt jeder einzelnes Feld anzuklicken
 
-NOTE: Beim Starten des programm kann man (bzw. soll man) erstmal ein konfiguration zeichen bevor man `Enter` drück, sonst passiert nicht, weil alle Zelle per default iaktiv sind.
-
-IMPORTANT: Der Feld ist immer begrentz, die Teile die den Rand überschreiten werden entweder nicht mehr betrachtet oder wird deren Evolution blockiert(bzw. umgeleitet) Der gleite.png[gleiter] wird hier bespielsweise am Rand zum vierteiligen Block.
+IMPORTANT: Das Feld ist immer begrentz, die Teile die den Rand überschreiten werden entweder nicht mehr betrachtet oder wird deren Evolution blockiert(bzw. umgeleitet) Der gleite.png[gleiter] wird hier bespielsweise am Rand zum vierteiligen Block.
 
 ==== Abbildungen
 
