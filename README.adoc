@@ -80,4 +80,4 @@ image::src/main/resources/andärungInDerPause.png[Laufendes Programm Beispiel 5]
 
 image::src/main/resources/laufendesProgramm5.png[Laufendes Programm Beispiel 6]
 
-Natürlich Können Sie andere Start Configurationen ausprobieren und die Evolution der Anderen Configurationen beobachten.
+Natürlich Können Sie andere Start Configurationen ausprobieren und die Evolution aller deren Generationen beobachten.
