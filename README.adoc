@@ -70,7 +70,7 @@ image::src/main/resources/laufendesProgramm3.png[Laufendes Programm Beispiel 3]
 
 image::src/main/resources/laufendesProgramm4.png[Laufendes Programm Beispiel 4]
 
-->Änderung in der Pause 4 (Auf Französish: le Canon a planneur)
+->Änderung in der Pause 4
 
 image::src/main/resources/andärungInDerPause.png[Laufendes Programm Beispiel 5]
 
