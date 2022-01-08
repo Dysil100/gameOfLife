@@ -1,16 +1,15 @@
 package game;
 
-import librairies.StdDraw;
-
 import java.awt.*;
 import java.awt.event.*;
 
 import static librairies.StdDraw.*;
 
 public class Board {
-
+    // TODO: 08.01.22 Sound Einbauen bei je geburt oder je Sterben
+    // TODO: 08.01.22 StdDraw und Sound experimentieren
     private int Generationen;
-    private final ManageCells manageCells;
+    private ManageCells manageCells;
     static final int WIDTH_SCREEN = 1100;
     static final int HEIGHT_SCREEN = 600;
     static final int UNIT_SIZE = 6;
@@ -24,7 +23,6 @@ public class Board {
         setCanvasSize(WIDTH_SCREEN, HEIGHT_SCREEN);
         setXscale(0, WIDTH_SCREEN);
         setYscale(0, HEIGHT_SCREEN);
-        manageCells = new ManageCells();
         start();
     }
 
@@ -32,6 +30,8 @@ public class Board {
         text(widthMidle, heigthMidle + (10 * UNIT_SIZE), "Welcome to: The Conway's Game of Life");
         text(widthMidle, heigthMidle + (6*UNIT_SIZE), "How two simple rules lead to more complex systems");
         text(widthMidle, heigthMidle - (6 * UNIT_SIZE), "Touch the Screen to simulate");
+        manageCells = new ManageCells();
+        manageCells.drawCells();
         show(500);
         running = false;
         Generationen = 0;
@@ -88,8 +88,11 @@ public class Board {
 
     private void checkEvents() {
         checkPause();
-        if (isKeyPressed(KeyEvent.VK_ESCAPE) && running || manageCells.getCells().stream().noneMatch(Cell::isAlive))
+        if (isKeyPressed(KeyEvent.VK_ESCAPE) && running || manageCells.getCells().stream().noneMatch(Cell::isAlive)) {
+            manageCells.killAll();
+            manageCells.apply();
             start();
+        }
     }
 
     public void run() {
@@ -98,8 +101,8 @@ public class Board {
             clearBoard();
             manageCells.apply();
             runText();
+            show(delay);
             Generationen++;
-            StdDraw.show(delay);
             checkEvents();
         }
     }
