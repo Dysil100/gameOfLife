@@ -11,6 +11,7 @@ public class ManageCells {
     private final List<Position> lebendePositionen = new ArrayList<>();
     private final HashMap<Position, Cell> cellsTable = new HashMap<>();
     private final List<Cell> lastGeneration = new ArrayList<>();
+    List<Cell> thisGeneration = new ArrayList<>();
 
     public ManageCells() {
         for (int i = UNIT_SIZE / 2; i < WIDTH_SCREEN; i += UNIT_SIZE) {
@@ -77,8 +78,8 @@ public class ManageCells {
 
     public void drawCells() {
         synchronized (this) {
+            thisGeneration = getCells().stream().filter(Cell::isAlive).collect(Collectors.toList());
             lastGeneration.forEach(Cell::verschwinde);
-            List<Cell> thisGeneration = getCells().stream().filter(Cell::isAlive).collect(Collectors.toList());
             thisGeneration.forEach(Cell::erscheinne);
             lastGeneration.clear();
             lastGeneration.addAll(thisGeneration);
@@ -100,5 +101,11 @@ public class ManageCells {
     public void apply() {
         checkRules();
         drawCells();
+        letCellTalk();
+    }
+
+    private void letCellTalk() {
+        thisGeneration.forEach(c -> c.talk(thisGeneration.size()));
+        thisGeneration.clear();
     }
 }

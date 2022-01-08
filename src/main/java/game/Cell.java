@@ -3,7 +3,10 @@ package game;
 import java.awt.*;
 import java.util.Random;
 
+import static game.Board.delay;
 import static game.Board.halfSize;
+import static librairies.StdAudio.note;
+import static librairies.StdAudio.play;
 import static librairies.StdDraw.*;
 
 public class Cell {
@@ -11,6 +14,8 @@ public class Cell {
     private final int y;
     private boolean isAlive;
     private final Color c;
+    private Random r;
+    private double hz;
 
     public Cell(int x, int y) {
         this(x, y, false);
@@ -21,6 +26,7 @@ public class Cell {
         this.y = y;
         this.isAlive = isAlive;
         c = getColor();
+        hz = getHz();
     }
 
     public void erscheinne() {
@@ -40,7 +46,7 @@ public class Cell {
     }
 
     private Color getColor() {
-        Random r = new Random();
+        r = new Random();
         return new Color(r.nextInt(215)+ 40, r.nextInt(215)+ 40, r.nextInt(215)+ 40);
     }
 
@@ -61,4 +67,11 @@ public class Cell {
                '}';
     }
 
+    public void talk(int size) {
+        play(note(hz, 0.1/size, 2));
+    }
+
+    private double getHz() {
+        return r.nextInt(700);
+    }
 }

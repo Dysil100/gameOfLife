@@ -9,13 +9,14 @@ public class Board {
     // TODO: 08.01.22 Sound Einbauen bei je geburt oder je Sterben
     // TODO: 08.01.22 StdDraw und Sound experimentieren
     private int Generationen;
-    private ManageCells manageCells;
+
+    static ManageCells manageCells;
     static final int WIDTH_SCREEN = 1100;
     static final int HEIGHT_SCREEN = 600;
     static final int UNIT_SIZE = 6;
     static final int halfSize = UNIT_SIZE / 2;
     private boolean running;
-    int delay = 20;
+    static int delay = 20;
     int widthMidle = WIDTH_SCREEN / 2;
     int heigthMidle = HEIGHT_SCREEN / 2;
 
